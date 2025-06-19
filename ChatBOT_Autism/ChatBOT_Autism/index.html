@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GINA: Communication Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="theme-toggle">
+                <button id="theme-button">Change Theme</button>
+            </div>
+            <h1>GINA</h1>
+            <p>An adaptive communication assistant for neurodivergent individuals</p>
+        </header>
+
+        <main>
+            <section class="settings-panel">
+                <h2>Settings</h2>
+                <div class="setting-options">
+                    <label>
+                        <input type="checkbox" id="simplified-text"> 
+                        Use simplified text always
+                    </label>
+                    <label>
+                        <input type="checkbox" id="avoid-emojis"> 
+                        Avoid emojis
+                    </label>
+                    <label>
+                        <input type="checkbox" id="explain-sarcasm"> 
+                        Explain sarcasm automatically
+                    </label>
+                    <label>
+                        <input type="checkbox" id="read-aloud"> 
+                        Read responses aloud
+                    </label>
+                </div>
+            </section>
+
+            <section class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will appear here -->
+                </div>
+
+                <div class="quick-starters">
+                    <h3>Quick Conversation Starters</h3>
+                    <div class="starters-container">
+                        <button class="starter-btn">I'm autistic. Can you help me understand what this message means?</button>
+                        <button class="starter-btn">Can you simplify this sentence for me?</button>
+                        <button class="starter-btn">Can you help me respond in a friendly way?</button>
+                        <button class="starter-btn">What does this phrase mean?</button>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                    <div class="input-buttons">
+                        <button id="voice-input-btn" title="Voice Input">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" y1="19" x2="12" y2="23"></line>
+                                <line x1="8" y1="23" x2="16" y2="23"></line>
+                            </svg>
+                        </button>
+                        <button id="send-btn">Send</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>GINA &copy; 2025 - An Adaptive AI Companion for Neurodivergent Communication</p>
+        </footer>
+    </div>
+
+    <!-- Include the OpenAI Service first -->
+    <script src="openai-service.js"></script>
+    <!-- Then include the main script -->
+    <script src="script.js"></script>
+</body>
+</html>
