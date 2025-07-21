@@ -58,5 +58,3 @@ This project serves as a great foundation. Here are some ways it could be expand
   * **Code Comments:** Commenting the code to explain the logic and architecture will make it easier for others to understand and contribute.
   * **Adding More Prompts:** Expanding the range of prompts to cover a wider variety of user needs.
   * **Natural Language Processing (NLP) Integration:** Enhancing the chatbot with more advanced NLP capabilities to understand and respond to a broader range of user inputs.
-
-If you are the owner of this repository, we encourage you to expand on this README to provide more specific details about your project\!
